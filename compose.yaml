@@ -1,0 +1,21 @@
+services:
+  configarr:
+    container_name: configarr
+    hostname: configarr
+    image: ghcr.io/raydak-labs/configarr:latest
+    network_mode: bridge
+    restart: no
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - TZ=Europe/Berlin
+      #- LOG_STACKTRACE=true
+    volumes:
+      - ./configarr/config:/app/config
+      - ./configarr/repos:/app/repos
+      - ./configarr/cfs:/app/cfs
+      - ./configarr/templates:/app/templates
+    labels:
+      - net.unraid.docker.managed=composeman
+      - net.unraid.docker.icon=https://raw.githubusercontent.com/wiki/raydak-labs/configarr/img/logo.png
+      - net.unraid.docker.shell=bash
