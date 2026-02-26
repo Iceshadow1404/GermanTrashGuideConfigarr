@@ -1,0 +1,37 @@
+delete_unmanaged_custom_formats:
+  enabled: false
+media_management:
+  id: 1
+  autoUnmonitorPreviouslyDownloadedEpisodes: false
+  recycleBin: 
+  recycleBinCleanupDays: 7
+  downloadPropersAndRepacks: doNotPrefer
+  createEmptySeriesFolders: false
+  deleteEmptyFolders: true
+  fileDate: 0
+  rescanAfterRefresh: afterManual
+  setPermissionsLinux: false
+  chmodFolder: 
+  chownGroup: 
+  episodeTitleRequired: never
+  skipFreeSpaceCheckWhenImporting: false
+  minimumFreeSpaceWhenImporting: 100
+  copyUsingHardlinks: true
+  useScriptImport: false
+  importExtraFiles: true
+  extraFileExtensions: srt,sub,idx,vob
+  enableMediaInfo: true
+media_naming_api:
+  id: 1
+  renameEpisodes: true
+  replaceIllegalCharacters: true
+  colonReplacementFormat: 4
+  customColonReplacementFormat: Smart Replace
+  multiEpisodeStyle: 5
+  standardEpisodeFormat: "{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}"
+  dailyEpisodeFormat: "{Series TitleYear} - {Air-Date} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}"
+  seriesFolderFormat: "{Series TitleYear} {tvdb-{TvdbId}}"
+  seasonFolderFormat: Season {season:00}
+  specialsFolderFormat: Specials
+delete_old_custom_formats: true
+replace_existing_custom_formats: true
