@@ -1,0 +1,16 @@
+custom_formats:
+  - trash_ids:
+      - 32b367365729d530ca1c124a0b180c64
+    assign_scores_to:
+      - name: '[German] HD Bluray + WEB'
+        score: 0
+      - name: '[German] HD Remux + WEB'
+        score: 0
+      - name: '[German] UHD Bluray + WEB'
+        score: 0
+      - name: '[German] UHD Bluray + WEB (Alternative)'
+        score: 0
+      - name: '[German] UHD Remux + WEB'
+        score: 0
+      - name: '[German] Anime HD Bluray + WEB'
+        score: 0
