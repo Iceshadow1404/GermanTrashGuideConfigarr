@@ -19,7 +19,7 @@ media_management:
   copyUsingHardlinks: true
   useScriptImport: false
   importExtraFiles: true
-  extraFileExtensions: srt,sub,idx,vob
+  extraFileExtensions: srt,sub,idx,vob,nfo
   enableMediaInfo: true
 media_naming_api:
   id: 1
@@ -28,7 +28,3 @@ media_naming_api:
   colonReplacementFormat: delete
   standardMovieFormat: "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {{Edition Tags}} {[MediaInfo 3D]}{[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}"
   movieFolderFormat: "{Movie CleanTitle} ({Release Year}) [tmdbid-{TmdbId}]"
-quality_definition:
-  type: movie # Quality definition type for Radarr
-delete_old_custom_formats: true
-replace_existing_custom_formats: true

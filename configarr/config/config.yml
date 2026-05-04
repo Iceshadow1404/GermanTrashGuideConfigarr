@@ -11,6 +11,7 @@ radarr:
     api_key: RadarrApiKey
     include:
       - template: template-radarr-german
+      # - template: template-radarr-naming # Uncomment this line if you want to automatically configure media management
       - template: 2b90e905c99490edc7c7a5787443748b #[German] HD Bluray + WEB  https://github.com/TRaSH-Guides/Guides/blob/master/docs/json/radarr/quality-profiles/german-hd-bluray-web.json
         source: TRASH
       - template: c13c33fdd2c306266b34cb9946de5919 # [German] HD Remux + WEB https://github.com/TRaSH-Guides/Guides/blob/master/docs/json/radarr/quality-profiles/german-hd-remux-web.json
@@ -25,10 +26,11 @@ radarr:
 
 sonarr:
   Sonarr-Main-1080p:
-    base_url:  http://SonarrURL:Port
+    base_url: http://SonarrURL:Port
     api_key: SonarrApiKey
     include:
       - template: template-sonarr-german
+      #- template: template-sonarr-naming # Uncomment this line if you want to automatically configure media management
       - template: dca7e5e9e99c703bcbdaaa471dd40e98 # [German] HD Bluray + WEB https://github.com/TRaSH-Guides/Guides/blob/master/docs/json/sonarr/quality-profiles/german-hd-bluray-web.json
         source: TRASH
       - template: 0dd5f085ed61a1e01f6d347779dfa1bc # [German] HD Remux + WEB https://github.com/TRaSH-Guides/Guides/blob/master/docs/json/sonarr/quality-profiles/german-hd-remux-web.json

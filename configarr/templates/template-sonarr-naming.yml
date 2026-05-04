@@ -19,7 +19,7 @@ media_management:
   copyUsingHardlinks: true
   useScriptImport: false
   importExtraFiles: true
-  extraFileExtensions: srt,sub,idx,vob
+  extraFileExtensions: srt,sub,idx,vob,nfo
   enableMediaInfo: true
 media_naming_api:
   id: 1
@@ -33,5 +33,3 @@ media_naming_api:
   seriesFolderFormat: "{Series TitleYear} {tvdb-{TvdbId}}"
   seasonFolderFormat: Season {season:00}
   specialsFolderFormat: Specials
-delete_old_custom_formats: true
-replace_existing_custom_formats: true
